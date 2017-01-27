@@ -1,0 +1,115 @@
+@CHARSET "UTF-8";
+.cart{
+}
+.cart a{
+	color: black;
+}
+.cart .list{	
+	overflow: hidden;
+	width: 80%;
+	margin: 1em auto;
+}
+.form .actions{
+	overflow: hidden;
+}
+.actions a{
+	background-color: #343234;
+	color: white;
+	float: right;
+}
+.form{
+	overflow: hidden;
+}
+.form .details{
+	background-color: #fff;
+	float: left;
+}
+.form .details:nth-child(1){
+	width: calc(60% - 1em);
+	margin-right: 1em;
+}
+.form .details:nth-child(2){
+	width: 40%;
+}
+.details div{
+	overflow: hidden;
+}
+.details div h1{
+	text-align: left;
+	padding: 0.5em 0.5em;
+}
+.details div label{
+	float: left;
+	width: 14em;
+	display: block;
+	/*padding: 1em;*/
+}
+.details div input{
+	float: left;
+	
+}
+.details div select{
+	float: left;
+}
+.details button{
+	margin: 1em;
+}
+.confirmation{
+	
+}
+#payment{
+	display: none;
+}
+#payment button{
+	width: 40%;
+	margin: 0 auto;
+	float: initial;
+	display: block;
+}
+table{
+	width: 100%;
+	border-collapse: collapse;
+}
+td a{
+	display: block;
+}
+td img{
+	display: block;
+	object-fit: cover;
+	width: 100px;
+	height: 70px;
+}
+tr .delete{
+	width: 2em;
+	text-align: center;
+}
+tr .item{
+	width: auto;
+}
+tr .photo{
+	width: 100px;
+	overflow: hidden;
+	padding: 0.5em 0em;
+}
+tr .name{
+	width: calc((70% - 150px) - 13em);
+}
+tr .price{
+	width: 10%;
+	text-align: right;
+}
+tr .quantity{
+	width: 10%;
+	text-align: right;
+}
+tr .total{
+	width: 10%;
+	text-align: right;
+}
+tfoot td{
+	text-align: right;
+}
+.list .payment{
+	overflow: hidden;
+	margin: 1em auto;
+}

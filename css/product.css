@@ -1,0 +1,145 @@
+@CHARSET "UTF-8";
+.product{
+}
+.product .detail{
+	width: 80%;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.detail .photos{
+	width: 50%;
+	height: 600px;
+	float: left;
+}
+.photos div{
+	height: calc((600px - 50px) - 1em);
+	overflow: hidden;
+}
+.photos div img{
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	transform: scale(1.2);
+	transition: transform 1s;
+}
+.photos div:hover img{
+	transform: scale(1);
+}
+.photos ul{
+	list-style: none;
+	padding: 0em;
+	margin: 0em;
+}
+.photos ul li{
+	float: left;
+}
+.photos ul a{
+	width: 50px;
+	height: 50px;
+	margin: 1em 1em 0em 0em;
+}
+.photos ul a img{
+	transition: transform 1s;
+}
+.photos ul a:hover img{
+	transform: scale(1.5);
+}
+.photos ul li:last-child a{
+	margin: 1em 0em 0em 0em;
+}
+.photos ul img{
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+.detail .caption{
+	width: 50%;
+	height: 600px;
+	float: left;
+	background-color: #F7E7E0;
+}
+.caption form{
+	display: block;
+	padding: 0em 1em;
+}
+.caption h4{
+	display: block;
+	font-size: 1em;
+	padding: 1em 1em 0em 1em;
+	font-weight: normal;
+	color: grey;
+	text-align: right;
+}
+.caption h4 span{
+	font-size: 1em;
+}
+.caption h2{
+	display: block;
+	font-size: 1em;
+	padding: 1em 1em;
+	text-align: left;
+}
+.caption h2 span{
+	font-size: 1.5em;
+	padding: 0em;
+}
+.caption p{
+	padding: 1em 1em 3em 1em;
+}
+.caption div{
+	padding: 0.5em 1em;
+	overflow: hidden;
+}
+.caption div select{
+	float: left;
+}
+.caption div label{
+	display: block;
+	padding: 1em;
+	float: left;
+}
+.caption div a{
+	background-color: #CD5334;
+	float: left;
+	margin-right: 0.5em;
+}
+.product .information{
+	width: 80%;
+	overflow: hidden;
+	margin: 1em auto;
+	height: 350px;
+	background-color: #F7E7E0;
+}
+.information .topics{
+	
+}
+.topics a.selected{
+	background-color: #1976D3;
+}
+.topics ul{
+	list-style: none;
+	overflow: hidden;
+	margin: 0 auto;
+	background-color: #388FC5;
+}
+.topics li{
+	float: right;
+	display: block;
+}
+.information .more{
+	
+}
+.information .more.show{
+	display: block;
+	padding: 1em 1em;
+}
+.information .more.hidden{
+	display: none;
+}
+.more h2{
+	font-size: 1em;
+	padding: 1em;
+}
+.more p{	
+	padding: 1em;
+}

@@ -1,0 +1,10 @@
+{
+	"name": "palosanto",
+	"version": "1.0.0",
+	"description": "palo santo website",
+	"main": "index.html",
+	"author": "cristian",
+	"scripts": {
+		"start": "lite-server"
+	}
+}

@@ -1,0 +1,95 @@
+@CHARSET "UTF-8";
+.titl{
+	width: calc(80% - 2em);
+	margin: 4.5em auto 1em 20%;
+	padding: 0em 1em;
+}
+.shop{
+	overflow: hidden;
+}
+.shop a{
+	color: black;
+}
+.shop .tool{
+	float: left;
+	width: 20%;
+	overflow: hidden;
+}
+.tool ul{
+	list-style: none;
+	overflow: hidden;
+	margin: 0em 1em;
+}
+.tool li{
+	margin-bottom: 1em;
+}
+.tool a{
+	cursor: default;
+	display: block;
+}
+.tool select{
+	width: 90%;
+	float: right;
+}
+.list{
+	float: left;
+	overflow: hidden;
+	width: 80%;
+}
+.list .product{
+	width: calc((100% / 4) - 2em);
+	float: left;
+	margin: 2.5em 1em;
+	position: relative;
+	transition: transform 1s;
+}
+.product:hover{
+	transform: scale(1.05);
+	position: relative;
+	box-shadow: 0em 0em 2em 0.1em rgba(0,0,0,0.5);
+}
+.product:hover .more{
+	opacity: 1;
+}
+.product .more{
+	background-color: #CD5334;
+	position: absolute;
+	right: 0;
+	opacity: 0;
+	transition: opacity 0.4s;
+}
+.product .more a{
+	color: white;
+}
+.product .photo{
+	overflow: hidden;
+}
+.photo img{
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	height: 200px;
+}
+.product a{
+	display: block;
+}
+.product .description{
+}
+.product .price{
+	overflow: hidden;
+}
+.product .price a:first-child{
+	float: left;
+}
+.product .price a{
+	float: right;
+}
+
+@media (min-width: 320px) and (max-width: 1024px){
+	
+	.list .product{
+		width: calc((100% / 2) - 2em);
+		float: left;
+		padding: 1em;
+	}
+}

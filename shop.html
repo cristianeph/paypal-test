@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+		<title>Palo Santo Experience</title>
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/shop.css" />
+		<script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+		<script type="text/javascript" src="js/underscore-min.js"></script>
+		<script type="text/javascript" src="js/backbone-min.js"></script>
+		<script type="text/javascript" src="js/base.js"></script>
+		<script type="text/javascript" src="js/shop.js"></script>
+	</head>
+	<body>
+		<section class="notification">
+			<div class="alert">
+				<h2>Notification</h2>
+				<p>Test</p>
+			</div>
+		</section>
+		<nav>
+			<ul>
+				<li><a href="index.html" class="logo"><span>Logo</span></a></li>
+				<li><a href="index.html#contact" class="option"><span class="icon-envelop"></span><span>Contact us</span></a></li>
+				<li><a href="index.html#us" class="option"><span class="icon-info"></span><span>About us</span></a></li>
+				<li><a href="shop.html" class="option"><span class="icon-ticket"></span><span>Products</span></a></li>
+				<li><a href="cart.html" class="option"><span class="icon-cart"></span><span>0</span></a></li>
+				<li><a href="#" class="option"><span class="icon-facebook2"></span><span>Facebook</span></a></li>
+				<li><a href="#" class="option"><span class="icon-whatsapp"></span><span>Whatsapp</span></a></li>
+			</ul>
+		</nav>
+		<header class="titl">
+			<h2>CATALOG</h2>
+		</header>
+		<section class="shop">
+			<article class="tool">
+				<ul>
+					<li><a href="#"><span class="icon-menu2"></span><span>Order by:</span></a></li>
+					<li>
+						<a href="#">
+							<select>
+								<option>Price Asc</option>
+								<option>Price Desc</option>
+							</select> 
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<select>
+								<option>Alphabetical</option>
+								<option>Sale</option>
+							</select> 
+						</a>
+					</li>
+				</ul>
+				<ul>
+					<li><a href="#"><span class="icon-filter"></span><span>Filter by:</span></a></li>
+					<li>
+						<a href="#">
+							<select>
+								<option>Category a</option>
+								<option>Category b</option>
+								<option>Category c</option>
+							</select> 
+						</a>
+					</li>
+				</ul>
+			</article>
+			<article class="list">
+				<script type="text/template" id="product-template">
+					<% _.each(collection, function(product) { %>
+					<div class="product">
+						<div class="more">
+							<a href="#id=<%= product.id %>"><span>Show details</span></a>
+						</div>
+						<div class="photo">
+							<a href="product.html?id=<%= product.id %>"><img alt="<%= product.name %>" src="<%= product.photo %>" /></a>
+						</div>
+						<div class="description">
+							<a href="product.html?id=<%= product.id %>"><span><%= product.name %></span></a>
+						</div>
+						<div class="price">
+							<a href="product.html?id=<%= product.id %>"><span>$ USD <strong><%= product.price %></strong></span></a>
+							<a href="#id=<%= product.id %>" data-id="<%= product.id %>"><span class="icon-cart"></span></a>
+						</div>
+					</div>
+					<% }); %>
+				</script>
+				
+			</article>
+		</section>
+	</body>
+</html>
